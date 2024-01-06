@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import DownloadIcon from "@mui/icons-material/Download";
+import { TypeAnimation } from "react-type-animation";
 
 function HeroSection() {
   return (
@@ -13,7 +15,12 @@ function HeroSection() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
               Hello, I'm{" "}
             </span>
-            Josh
+            <TypeAnimation
+              sequence={["Josh", 5000, "Front End", 1000, "Back End", 1000]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
