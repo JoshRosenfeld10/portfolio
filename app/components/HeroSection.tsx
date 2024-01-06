@@ -23,11 +23,10 @@ function HeroSection() {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
+            A passionate full stack developer based in Toronto, Canada. 📍
           </p>
           <div id="btns" className=" ">
-            <button className="px-6 py-3 my-2 mr-5 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 text-white md:text-base text-sm hover:brightness-110 transition-all ease-linear duration-100">
+            <button className="px-6 py-3 my-2 mr-5 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 text-white md:text-base text-sm hover:brightness-[1.15] transition-all ease-linear duration-100">
               Connect With Me
             </button>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 text-white md:text-base text-sm">
