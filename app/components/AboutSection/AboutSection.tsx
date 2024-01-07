@@ -1,15 +1,14 @@
 import Image from "next/image";
 import React from "react";
-import Skill from "./Skill";
-import skills from "./skills";
+import SkillSection from "./Skills/SkillSection";
 
 function AboutSection() {
   return (
     <div
       id="about"
-      className="bg-white flex flex-col justify-center items-center py-64 gap-10"
+      className="text-white flex flex-col justify-center items-center gap-10 py-10 bg-[#121212] bg-opacity-50 rounded-2xl"
     >
-      <div className="bg-white grid grid-cols-2 gap-10">
+      <div className="grid grid-cols-2 gap-10">
         <div id="image-side" className="flex justify-end">
           <div
             id="image"
@@ -24,7 +23,7 @@ function AboutSection() {
             <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
               ABOUT ME
             </h1>
-            <p className="text-sm">
+            <p className="text-sm text-[#ADB7BE]">
               As a Junior Front-End Developer, I possess an impressive arsenal
               of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I
               excel in designing and maintaining responsive websites that offer
@@ -46,38 +45,7 @@ function AboutSection() {
           </div>
         </div>
       </div>
-      <div
-        id="skills"
-        className="bg-blue-500 w-full flex flex-col justify-center items-center gap-5"
-      >
-        <h1 className="font-[500] text-2xl">Skills</h1>
-        <div className="flex flex-col gap-5">
-          <div className="grid grid-cols-10 h-fit max-w-[1000px] items-center">
-            <h1 className=" col-span-3">Programing</h1>
-            {skills.programing.map((skill) => (
-              <Skill name={skill.name} id={skill.id} />
-            ))}
-          </div>
-          <div className="grid grid-cols-10 h-fit max-w-[1000px] items-center">
-            <h1 className="col-span-3">Web & Database</h1>
-            {skills.web_and_database.map((skill) => (
-              <Skill name={skill.name} id={skill.id} />
-            ))}
-          </div>
-          <div className="grid grid-cols-10 h-fit max-w-[1000px] items-center">
-            <h1 className="col-span-3 mr-10">Frameworks & Libraries</h1>
-            {skills.frameworks_and_libraries.map((skill) => (
-              <Skill name={skill.name} id={skill.id} />
-            ))}
-          </div>
-          <div className="grid grid-cols-10  h-fit max-w-[1000px] items-center">
-            <h1 className="col-span-3">Tech</h1>
-            {skills.tech.map((skill) => (
-              <Skill name={skill.name} id={skill.id} />
-            ))}
-          </div>
-        </div>
-      </div>
+      <SkillSection />
     </div>
   );
 }

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="flex h-screen flex-col bg-[#121212]">
       <NavBar />
-      <div className="container flex flex-col gap-16 mt-24 mx-auto px-12 py-4  z-10">
+      <div className="container flex flex-col gap-24 mt-24 mx-auto px-12 py-4  z-10">
         <HeroSection />
         <AboutSection />
       </div>

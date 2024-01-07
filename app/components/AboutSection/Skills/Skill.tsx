@@ -12,7 +12,7 @@ function Skill({ name, id }: Props) {
 
   return (
     <div
-      className="relative flex flex-col justify-center items-center text-white"
+      className="relative flex flex-col justify-center items-center text-white w-[60px] h-[60px]"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
