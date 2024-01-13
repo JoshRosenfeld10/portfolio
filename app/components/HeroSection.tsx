@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 
 function HeroSection() {
   return (
-    <div className="lg:py-16">
+    <div className=" lg:py-32 sm:py-44 py-12">
       <div className="sm:grid flex flex-col gap-10 sm:gap-0 sm:grid-cols-12">
         <div
           id="first-divider"

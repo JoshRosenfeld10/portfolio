@@ -16,17 +16,19 @@ function Skill({ name, id }: Props) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <Image
-        src={`https://skillicons.dev/icons?i=${id}`}
-        alt={id}
-        width={50}
-        height={50}
-        className={
-          hovered
-            ? "-translate-y-2 transition ease-out duration-500"
-            : "translate-y-0 transition ease-out duration-500"
-        }
-      />
+      <div className="sm:w-[50px] sm:h-[50px] w-[40px] h-[40px]">
+        <Image
+          src={`https://skillicons.dev/icons?i=${id}`}
+          alt={id}
+          width={50}
+          height={50}
+          className={
+            hovered
+              ? "-translate-y-2 transition ease-out duration-500"
+              : "translate-y-0 transition ease-out duration-500"
+          }
+        />
+      </div>
       <h1
         className={
           hovered

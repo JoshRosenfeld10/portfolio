@@ -24,7 +24,7 @@ function SkillSection() {
 
   return (
     <div className="w-full flex flex-col justify-center items-center gap-5 text-white">
-      <h1 className="font-[500] text-2xl">Skills</h1>
+      <h1 className="font-[500] md:text-2xl text-xl">Skills</h1>
       <div className="flex gap-5">
         <TabButton
           selectTab={() => handleTabChange(selectionOptions.PROGRAMING)}
