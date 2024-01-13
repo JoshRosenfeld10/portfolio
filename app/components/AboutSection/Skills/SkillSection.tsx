@@ -2,7 +2,7 @@
 import React, { useState, startTransition } from "react";
 import Skill from "./Skill";
 import skills from "./skills";
-import TabButton from "../TabButton";
+import TabButton from "./TabButton";
 
 enum selectionOptions {
   PROGRAMING,

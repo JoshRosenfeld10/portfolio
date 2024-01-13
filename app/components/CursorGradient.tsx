@@ -20,7 +20,7 @@ function CursorGradient() {
         <motion.div
           variants={variants}
           animate="default"
-          className="w-[3840px] h-[3840px] bg-gradient-radial from-primary-950 via-transparent to-transparent fixed blur-3xl opacity-50"
+          className="w-[3840px] h-[3840px] bg-gradient-radial from-primary-900 via-transparent to-transparent fixed blur-3xl opacity-50"
         />
       )}
     </>
