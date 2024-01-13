@@ -1,7 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, startTransition } from "react";
 import Skill from "./Skill";
 import skills from "./skills";
+import TabButton from "../TabButton";
 
 enum selectionOptions {
   PROGRAMING,
@@ -14,22 +15,43 @@ function SkillSection() {
   const [selected, setSelected] = useState<selectionOptions>(
     selectionOptions.PROGRAMING
   );
+
+  const handleTabChange = (id: selectionOptions) => {
+    startTransition(() => {
+      setSelected(id);
+    });
+  };
+
   return (
     <div className="w-full flex flex-col justify-center items-center gap-5 text-white">
       <h1 className="font-[500] text-2xl">Skills</h1>
       <div className="flex gap-5">
-        <button onClick={() => setSelected(selectionOptions.PROGRAMING)}>
+        <TabButton
+          selectTab={() => handleTabChange(selectionOptions.PROGRAMING)}
+          active={selected === selectionOptions.PROGRAMING}
+        >
           Programing
-        </button>
-        <button onClick={() => setSelected(selectionOptions.WEB_AND_DATABASE)}>
+        </TabButton>
+        <TabButton
+          selectTab={() => handleTabChange(selectionOptions.WEB_AND_DATABASE)}
+          active={selected === selectionOptions.WEB_AND_DATABASE}
+        >
           Web & Database
-        </button>
-        <button
-          onClick={() => setSelected(selectionOptions.FRAMEWORKS_AND_LIBRARIES)}
+        </TabButton>
+        <TabButton
+          selectTab={() =>
+            handleTabChange(selectionOptions.FRAMEWORKS_AND_LIBRARIES)
+          }
+          active={selected === selectionOptions.FRAMEWORKS_AND_LIBRARIES}
         >
           Frameworks & Libraries
-        </button>
-        <button onClick={() => setSelected(selectionOptions.TECH)}>Tech</button>
+        </TabButton>
+        <TabButton
+          selectTab={() => handleTabChange(selectionOptions.TECH)}
+          active={selected === selectionOptions.TECH}
+        >
+          Tech
+        </TabButton>
       </div>
       {(selected === selectionOptions.PROGRAMING && (
         <div className="grid grid-cols-4 gap-3">
@@ -53,7 +75,7 @@ function SkillSection() {
           </div>
         )) ||
         (selected === selectionOptions.TECH && (
-          <div className="grid grid-cols-7 gap-3">
+          <div className="grid grid-cols-8 gap-3">
             {skills.tech.map((skill) => (
               <Skill name={skill.name} id={skill.id} />
             ))}

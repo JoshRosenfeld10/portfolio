@@ -35,7 +35,7 @@ function AboutSection() {
             </p>
             <div>
               <h1 className="font-[500]">Education</h1>
-              <ul className="text-sm list-inside list-disc">
+              <ul className="text-sm list-inside list-disc text-[#ADB7BE]">
                 <li>Queen's University</li>
                 <li>Bachelor of Computing (Honours)</li>
                 <li>Biomedical Computing Specialization</li>
