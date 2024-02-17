@@ -13,9 +13,11 @@ function ProjectSection() {
     animate: { y: 0, opacity: 1 },
   };
   return (
-    <div id="projects">
-      <h1 className="text-center text-4xl font-bold text-white">My Projects</h1>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+    <div id="projects" className="flex flex-col items-center">
+      <h1 className="text-center text-4xl font-bold text-white mb-5">
+        My Projects
+      </h1>
+      <ul ref={ref} className="flex flex-col gap-8 md:w-[60%]">
         {projectData.map((item, index) => (
           <motion.li
             key={index}

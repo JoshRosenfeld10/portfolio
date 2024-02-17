@@ -13,7 +13,7 @@ function ProjectCard({ data }: Props) {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <div>
+    <div className=" shadow-2xl">
       <div
         className="h-72 rounded-t-xl"
         style={{
@@ -48,8 +48,7 @@ function ProjectCard({ data }: Props) {
           </div>
         )}
       </div>
-
-      <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
+      <div className="text-white rounded-b-xl py-3 bg-[#181818]py-6 px-4 bg-[#181818] bg-opacity-60 cursor-default">
         <h5 className="text-xl font-semibold mb-2">{data.title}</h5>
         <p className="text-[#ADB7BE]">{data.description}</p>
       </div>

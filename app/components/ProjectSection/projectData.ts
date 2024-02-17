@@ -13,6 +13,13 @@ const projectData: ProjectType[] = [
         imagePath: '/images/1.png',
         githubLink: 'https://github.com/JoshRosenfeld10/Blog-Posts',
         previewLink: 'https://posts-project-jr.netlify.app/'
+    },
+    {
+        title: 'Sudoku-Solver',
+        description: 'Interactive game of Sudoku that can solve itself.',
+        imagePath: '/images/2.png',
+        githubLink: 'https://github.com/JoshRosenfeld10/Sudoku-Solver',
+        previewLink: '/'
     }
 ]
 
