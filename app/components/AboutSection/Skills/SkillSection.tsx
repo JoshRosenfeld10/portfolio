@@ -54,30 +54,30 @@ function SkillSection() {
         </TabButton>
       </div>
       {(selected === selectionOptions.PROGRAMING && (
-        <div className="grid grid-cols-4 gap-3">
+        <div className="grid grid-cols-4 gap-3 bg-[#121212] pt-4 rounded-full px-5 bg-opacity-35">
           {skills.programing.map((skill) => (
-            <Skill name={skill.name} id={skill.id} />
+            <Skill name={skill.name} id={skill.id} key={skill.id} />
           ))}
         </div>
       )) ||
         (selected === selectionOptions.WEB_AND_DATABASE && (
-          <div className="grid grid-cols-4 gap-3">
+          <div className="grid grid-cols-4 gap-3 bg-[#121212] pt-4 rounded-full px-5 bg-opacity-25">
             {skills.web_and_database.map((skill) => (
-              <Skill name={skill.name} id={skill.id} />
+              <Skill name={skill.name} id={skill.id} key={skill.id} />
             ))}
           </div>
         )) ||
         (selected === selectionOptions.FRAMEWORKS_AND_LIBRARIES && (
-          <div className="grid grid-cols-7 gap-3">
+          <div className="grid grid-cols-7 gap-3 bg-[#121212] pt-4 rounded-full px-5 bg-opacity-25">
             {skills.frameworks_and_libraries.map((skill) => (
-              <Skill name={skill.name} id={skill.id} />
+              <Skill name={skill.name} id={skill.id} key={skill.id} />
             ))}
           </div>
         )) ||
         (selected === selectionOptions.TECH && (
-          <div className="grid grid-cols-8 gap-3">
+          <div className="grid grid-cols-8 gap-3 bg-[#121212] pt-4 rounded-full px-5 bg-opacity-25">
             {skills.tech.map((skill) => (
-              <Skill name={skill.name} id={skill.id} />
+              <Skill name={skill.name} id={skill.id} key={skill.id} />
             ))}
           </div>
         ))}

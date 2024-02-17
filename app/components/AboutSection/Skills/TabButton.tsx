@@ -18,7 +18,7 @@ const TabButton = ({ active, selectTab, children }: Props) => {
   return (
     <button onClick={selectTab}>
       <p
-        className={`mr-3 font-semibold text-sm md:text-base hover:text-white ${buttonClasses} transition ease-linear`}
+        className={`mr-3 font-semibold text-xs sm:text-sm md:text-base hover:text-white ${buttonClasses} transition ease-linear`}
       >
         {children}
       </p>
