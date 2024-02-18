@@ -6,8 +6,7 @@ interface Props {
 function EmailTemplate({ subject, message }: Props) {
   return (
     <>
-      <h1>{subject}</h1>
-      <p>Thank you for contacting us!</p>
+      <p>Thank you for contacting me!</p>
       <p>New message submitted:</p>
       <p>{message}</p>
     </>

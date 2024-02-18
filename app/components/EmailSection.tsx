@@ -24,36 +24,35 @@ function EmailSection() {
     };
 
     const response = await axios.post("api/send", data);
-    console.log(response.data);
 
     if (response.status === 200) {
-      console.log("message sent");
       setEmailSubmitted(true);
     }
   };
   return (
-    <div id="contact">
-      <div className="flex flex-col">
-        <h5 className="text-xl font-bold text-white">Let's Connect</h5>
+    <div id="connect" className=" md:grid md:grid-cols-2 gap-10">
+      <div className="flex flex-col gap-3">
+        <h5 className="text-2xl font-bold text-white">Let's Connect</h5>
         <p className="text-[#ADB7BE]">
           I'm currently looking for new opportunities and would love a chance to
           connect. My inbox is always open - don't be shy!{" "}
         </p>
-        <div className="flex text-white">
+        <div className="flex text-white gap-5 mb-7 mt-2">
           <Link href={"https://github.com/JoshRosenfeld10"} target="_blank">
-            <GitHubIcon fontSize="large" />
+            <GitHubIcon fontSize="large" className=" scale-[1.20]" />
           </Link>
           <Link
             href={"https://www.linkedin.com/in/josh-rosenfeld-992355268/"}
             target="_blank"
+            className="text-xl"
           >
-            <LinkedInIcon fontSize="large" />
+            <LinkedInIcon fontSize="large" className="scale-[1.40]" />
           </Link>
         </div>
       </div>
       <div>
         {emailSubmitted ? (
-          <p>Email sent successfully!</p>
+          <p className="text-white text-xl">Email sent successfully!</p>
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
             <div className="mb-6">
