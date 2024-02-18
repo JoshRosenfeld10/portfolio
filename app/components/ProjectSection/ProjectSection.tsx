@@ -14,9 +14,9 @@ function ProjectSection() {
   };
   return (
     <div id="projects" className="flex flex-col items-center">
-      <h1 className="text-center text-4xl font-bold text-white mb-5">
-        My Projects
-      </h1>
+      <h1 className="text-4xl font-bold text-white mb-5">My Projects</h1>
+
+      <hr className="w-full h-10 md:w-[60%]" />
       <ul ref={ref} className="flex flex-col gap-8 md:w-[60%]">
         {projectData.map((item, index) => (
           <motion.li
