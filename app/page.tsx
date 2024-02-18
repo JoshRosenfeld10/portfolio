@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import NavBar from "./components/NavBar/NavBar";
 import AboutSection from "./components/AboutSection/AboutSection";
 import ProjectSection from "./components/ProjectSection/ProjectSection";
+import EmailSection from "./components/EmailSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ProjectSection />
+        <EmailSection />
       </div>
 
       <CursorGradient />
