@@ -2,6 +2,7 @@
 import React from "react";
 import DownloadIcon from "@mui/icons-material/Download";
 import { TypeAnimation } from "react-type-animation";
+import { Link } from "react-scroll";
 
 function HeroSection() {
   return (
@@ -26,9 +27,17 @@ function HeroSection() {
             A passionate full stack developer based in Toronto, Canada. 📍
           </p>
           <div id="btns" className=" ">
-            <button className="px-6 py-3 my-2 mr-5 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 text-white md:text-base text-sm hover:brightness-[1.15] transition ease-linear duration-100">
-              Connect With Me
-            </button>
+            <Link
+              to="connect"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={3000}
+            >
+              <button className="px-6 py-3 my-2 mr-5 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 text-white md:text-base text-sm hover:brightness-[1.15] transition ease-linear duration-100">
+                Connect With Me
+              </button>
+            </Link>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 text-white md:text-base text-sm">
               <div className="block bg-[#121212] rounded-full px-5 py-2 hover:bg-slate-700 transition-colors ease-linear duration-100">
                 Resume
