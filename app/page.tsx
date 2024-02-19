@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="flex h-screen flex-col bg-[#121212]">
       <NavBar />
-      <div className="container flex flex-col gap-36 mt-24 mb-32 mx-auto px-12 z-10">
+      <div className="container flex flex-col gap-36 my-24 mx-auto px-12 z-10">
         <HeroSection />
         <AboutSection />
         <ProjectSection />
