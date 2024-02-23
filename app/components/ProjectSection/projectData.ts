@@ -8,8 +8,15 @@ export interface ProjectType {
 
 const projectData: ProjectType[] = [
     {
+        title: 'Prompt Central',
+        description: 'Full stack NextJS application that allows users to discover, create, and share creative prompts to ask AI models. Complete with NextAuth for user authentification.',
+        imagePath: '/images/3.png',
+        githubLink: 'https://github.com/JoshRosenfeld10/PromptCentral',
+        previewLink: 'https://prompt-central-two.vercel.app/'
+    },
+    {
         title: 'Blog Posts!',
-        description: 'Full stack application that allows users to create their own blog posts or view others.',
+        description: 'Full stack CRUD application that allows users to create their own blog posts or view others.',
         imagePath: '/images/1.png',
         githubLink: 'https://github.com/JoshRosenfeld10/Blog-Posts',
         previewLink: 'https://posts-project-jr.netlify.app/'
@@ -20,7 +27,7 @@ const projectData: ProjectType[] = [
         imagePath: '/images/2.png',
         githubLink: 'https://github.com/JoshRosenfeld10/Sudoku-Solver',
         previewLink: '/'
-    }
+    },
 ]
 
 export default projectData
