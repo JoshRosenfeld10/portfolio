@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import SkillSection from "./Skills/SkillSection";
 
@@ -27,7 +26,7 @@ function AboutSection() {
               ABOUT ME
             </h1>
             <p className="text-sm text-[#ADB7BE]">
-              As a Junior Front-End Developer, I possess an impressive arsenal
+              As a Junior Full Stack Developer, I possess an impressive arsenal
               of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I
               excel in designing and maintaining responsive websites that offer
               a smooth user experience. My expertise lies in crafting dynamic,
@@ -39,7 +38,7 @@ function AboutSection() {
             <div>
               <h1 className="font-[500] mb-5 md:mb-0 text-lg">Education</h1>
               <ul className="text-sm list-inside list-disc text-[#ADB7BE]">
-                <li>Queen's University</li>
+                <li>Queen&apos;s University</li>
                 <li>Bachelor of Computing (Honours)</li>
                 <li>Biomedical Computing Specialization</li>
                 <li className="font-[500]">GPA: 4.22/4.30</li>

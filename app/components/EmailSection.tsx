@@ -32,10 +32,10 @@ function EmailSection() {
   return (
     <div id="connect" className=" md:grid md:grid-cols-2 gap-10">
       <div className="flex flex-col gap-3">
-        <h5 className="text-2xl font-bold text-white">Let's Connect</h5>
+        <h5 className="text-2xl font-bold text-white">Let&apos;s Connect</h5>
         <p className="text-[#ADB7BE]">
-          I'm currently looking for new opportunities and would love a chance to
-          connect. My inbox is always open - don't be shy!{" "}
+          I&apos;m currently looking for new opportunities and would love a
+          chance to connect. My inbox is always open - don&apos;t be shy!{" "}
         </p>
         <div className="flex text-white gap-5 mb-7 mt-2">
           <Link href={"https://github.com/JoshRosenfeld10"} target="_blank">

@@ -14,7 +14,7 @@ function HeroSection() {
         >
           <h1 className="text-4xl sm:text-5xl lg:text-8xl text-white font-extrabold flex-col flex lg:gap-10 ">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
-              Hello, I'm{" "}
+              Hello, I&apos;m{" "}
             </span>
             <TypeAnimation
               sequence={["Josh", 5000, "Front End", 1000, "Back End", 1000]}
