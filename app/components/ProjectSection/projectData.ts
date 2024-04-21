@@ -28,6 +28,13 @@ const projectData: ProjectType[] = [
         githubLink: 'https://github.com/JoshRosenfeld10/Sudoku-Solver',
         previewLink: '/'
     },
+    {
+        title: 'Wordle Clone',
+        description: 'Clone of the popular New York Times word game, Wordle.',
+        imagePath: '/images/4.png',
+        githubLink: 'https://github.com/JoshRosenfeld10/WordleClone',
+        previewLink: 'https://josh-rosenfeld-wordle-clone.vercel.app/'
+    }
 ]
 
 export default projectData
